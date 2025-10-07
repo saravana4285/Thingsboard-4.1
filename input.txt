@@ -1,0 +1,20 @@
+# ThingsBoard + PostgreSQL + Kafka installation configuration
+
+# ThingsBoard
+TB_VERSION=4.1
+
+# PostgreSQL
+PG_USER=postgres
+PG_PASSWORD=StrongPassword123
+PG_DB=thingsboard
+
+# Kafka
+KAFKA_IMAGE=bitnami/kafka:3.8.1
+DOCKER_COMPOSE_FILE=docker-compose-kafka.yml
+
+# Java
+JAVA_VERSION=openjdk-17-jdk-headless
+
+# Memory limits for ThingsBoard (optional)
+JAVA_XMS=2G
+JAVA_XMX=2G
