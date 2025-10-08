@@ -9,7 +9,7 @@ PG_PASSWORD=StrongPassword123
 PG_DB=thingsboard
 
 # Kafka
-KAFKA_IMAGE=bitnami/kafka:3.8.1
+KAFKA_IMAGE=bitnamilegacy/kafka:3.8.1
 DOCKER_COMPOSE_FILE=docker-compose-kafka.yml
 
 # Java
