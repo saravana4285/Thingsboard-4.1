@@ -68,6 +68,10 @@ if ! command -v docker-compose &>/dev/null; then
   sudo apt install -y docker-compose
 fi
 
+#Sara: Kafka pre-requisites
+sudo groupadd docker
+sudo usermod -aG docker root
+
 echo "Creating Docker Compose file for Kafka..."
 cat > "${DOCKER_COMPOSE_FILE}" <<EOF
 version: '3.8'
