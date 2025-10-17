@@ -113,7 +113,7 @@ export JAVA_OPTS="\$JAVA_OPTS -Xms${JAVA_XMS} -Xmx${JAVA_XMX}"
 EOF
 
 echo "Running ThingsBoard installation (with demo data)..."
-sudo /usr/share/thingsboard/bin/install/install.sh --loadDemo
+sudo /usr/share/thingsboard/bin/install/install.sh --installDir=/usr/share/thingsboard --loadDemo
 
 echo "Starting ThingsBoard service..."
 sudo systemctl enable thingsboard
