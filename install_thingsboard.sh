@@ -32,7 +32,7 @@ echo "Installing PostgreSQL..."
 sudo apt install -y postgresql-common
 sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
 sudo apt update
-sudo apt -y install postgresql-16
+sudo apt -y install postgresql-17
 sudo systemctl enable postgresql
 sudo systemctl start postgresql
 
